@@ -37,8 +37,8 @@ export default {
           $ne: false
         }
       })
-      .only(['title', 'slug'])
-      .sortBy('createdAt', 'desc')
+      .only(['publish-date', 'slug', 'title'])
+      .sortBy('publish-date', 'desc')
       .fetch()
     return {
       posts
