@@ -1,5 +1,5 @@
 <template>
-  <article class="max-w-screen-md mx-auto prose">
+  <article class="max-w-screen-md mx-auto prose px-8">
     <NuxtLink
       to="/"
       href="/"
@@ -19,7 +19,7 @@
     <NuxtLink
       to="/"
       href="/"
-      class="block my-4 text-gray-400 text-right"
+      class="block mb-16 mt-4 text-gray-400 text-right"
     >
       ← Go Back
     </NuxtLink>

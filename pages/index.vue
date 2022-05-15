@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-md mx-auto prose">
+  <div class="max-w-screen-md mx-auto prose px-8">
     <a
       href="https://marvinisaac.com"
       class="block my-4 text-gray-400 text-right"
