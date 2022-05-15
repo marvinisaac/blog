@@ -1,4 +1,10 @@
 export default {
+  // Use Nuxt app to handle Netlify's 404 page
+  // Source: https://nuxtjs.org/deployments/netlify/
+  generate: {
+    fallback: true
+  },
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
