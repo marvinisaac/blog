@@ -1,62 +1,14 @@
 ---
 title: Hello World
-publish-date: 2022-01-01
+publish-date: 2022-05-15
 ---
-# h1 Heading
+It’s already 2022, are blogs even still a thing?
 
-## h2 Heading
+I don’t know about you but, alongside YouTube videos, online blogs are my main source of news when it comes to web development. They are also an indispensable source of knowledge especially now that I’m exploring DevOps, Kubernetes, and a lot of related things. Those who came before me and documented their journey through their own blogs enabled me to emulate what they did and learn on my own from there.
 
-### h3 Heading
+This blog has the following goals:
+- Document my experiments and lessons
+- Share what I’ve learned
+- Be a time capsule to remind me how much I’ve learned through the years
 
-#### h4 Heading
-
-##### h5 Heading
-
-###### h6 Heading
-
-## Emphasis
-
-**This is bold text**
-
-_This is italic text_
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Example of a very smart quote here
-
-## Lists
-
-Unordered:
-
-- Create a list by starting a line with `+`, `-`, or `*`
-- Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-  - Ac tristique libero volutpat at
-
-Ordered:
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-## Code
-
-Inline `code`
-
-Block code "fences"
-
-```js
-var foo = function (bar) {
-  return bar++
-}
-
-console.log(foo(5))
-```
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ 'title text!')
+Will I meet any (and hopefully all) of those goals? Only time will tell.
