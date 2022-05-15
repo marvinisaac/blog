@@ -1,4 +1,15 @@
-# blog
+# Marvin's Blog
+
+## Description
+My git-based blog (since I always lose everything when I self-host a CMS 😅)
+
+### TODO
+1. Customize title for each post
+2. Customize preview when sharing (Twitter, LinkedIn, Facebook)
+
+---
+---
+*Nuxt's default README*
 
 ## Build Setup
 
