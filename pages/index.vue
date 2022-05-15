@@ -32,6 +32,11 @@
 export default {
   async asyncData ({ $content }) {
     const posts = await $content()
+      .where({
+        'publish-date': {
+          $ne: false
+        }
+      })
       .only(['title', 'slug'])
       .sortBy('createdAt', 'desc')
       .fetch()
