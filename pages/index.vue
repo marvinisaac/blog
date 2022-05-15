@@ -1,17 +1,30 @@
 <template>
-  <div class="mx-auto prose max-w-screen-md">
-    <h1 class="text-7xl font-black text-center">
-      Marvin's Posts
-    </h1>
-    <ul class="grid grid-cols-3 gap-8 mt-8">
-      <a
-        v-for="post in posts"
-        :key="post.title"
-        :href="`/${post.slug}`"
-      >
-        {{ post.title }}
-      </a>
-    </ul>
+  <div class="max-w-screen-md mx-auto prose">
+    <a
+      href="https://marvinisaac.com"
+      class="block my-4 text-gray-400 text-right"
+    >
+      ← Go Home
+    </a>
+    <div class="border-b border-t">
+      <h1 class="my-8 text-center">
+        Marvin's Blog
+      </h1>
+    </div>
+    <div class="mt-4">
+      <ul>
+        <li
+          v-for="post in posts"
+          :key="post.title"
+        >
+          <a
+            :href="`/${post.slug}`"
+          >
+            {{ post.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

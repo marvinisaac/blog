@@ -1,14 +1,18 @@
 <template>
-  <article class="mx-auto max-w-screen-md">
-    <div>
-      <NuxtLink to="/" href="/" class="block text-gray-400 mt-8">
-        ← Go Back
-      </NuxtLink>
-      <h1 class="text-5xl font-black mt-2">
+  <article class="max-w-screen-md mx-auto prose">
+    <NuxtLink
+      to="/"
+      href="/"
+      class="block my-4 text-gray-400 text-right"
+    >
+      ← Go Back
+    </NuxtLink>
+    <div class="border-b border-t">
+      <h1 class="my-8 text-center">
         {{ post.title }}
       </h1>
     </div>
-    <nuxt-content class="mt-4 prose max-w-full" :document="post" />
+    <nuxt-content class="mt-4" :document="post" />
   </article>
 </template>
 

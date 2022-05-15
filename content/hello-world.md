@@ -1,5 +1,6 @@
 ---
 title: Hello World
+publish-date: 2022-01-01
 ---
 # h1 Heading
 
