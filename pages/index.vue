@@ -20,7 +20,7 @@
           <a
             :href="`/${post.slug}`"
           >
-            {{ post.title }}
+            {{ post.title }}{{ post.subtitle ? `: ` + post.subtitle : "" }}
           </a>
         </li>
       </ul>
@@ -37,7 +37,7 @@ export default {
           $ne: false
         }
       })
-      .only(['publish-date', 'slug', 'title'])
+      .only(['publish-date', 'slug', 'title', 'subtitle'])
       .sortBy('publish-date', 'desc')
       .fetch()
     return {

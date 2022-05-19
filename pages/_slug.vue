@@ -7,14 +7,24 @@
     >
       ← Go Back
     </NuxtLink>
-    <div class="border-b border-t">
-      <h1 class="my-8 text-center">
+    <div class="border-b border-t py-8">
+      <h1 class="my-0 text-center">
         {{ post.title }}
       </h1>
+      <h3 class="my-0 text-center">
+        {{ post.subtitle }}
+      </h3>
     </div>
     <p class="text-gray-400 text-right text-xs">
       {{ post['publish-date'] | formatDate }}
     </p>
+    <span
+      v-for="req in post.prerequisite"
+      :key="req"
+      class="font-mono"
+    >
+      {{ req }}
+    </span>
     <nuxt-content class="mt-4" :document="post" />
     <NuxtLink
       to="/"
