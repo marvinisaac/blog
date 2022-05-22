@@ -21,8 +21,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'author', content: 'Marvin Isaac' },
-      { name: 'og:image', content: 'https://one.sgp1.cdn.digitaloceanspaces.com/marvinisaac/marvinisaac-1000.jpg'},
-      { hid: 'description', name: 'description', content: 'Marvin\'s Blog' }
+      { name: 'image', property: 'og:image', content: 'https://one.sgp1.cdn.digitaloceanspaces.com/marvinisaac/marvinisaac-1000.jpg'},
+      { hid: 'description', name: 'description', content: 'Marvin\'s Blog | A collection of posts about development, experiments, technology, tips, tricks, and everything else in between' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
