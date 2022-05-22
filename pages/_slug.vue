@@ -18,13 +18,6 @@
     <p class="text-gray-400 text-right text-xs">
       {{ post['publish-date'] | formatDate }}
     </p>
-    <span
-      v-for="req in post.prerequisite"
-      :key="req"
-      class="font-mono"
-    >
-      {{ req }}
-    </span>
     <nuxt-content class="mt-4" :document="post" />
     <NuxtLink
       to="/"
