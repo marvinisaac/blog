@@ -45,6 +45,18 @@ export default {
   async asyncData ({ $content, params }) {
     const post = await $content(params.slug).fetch()
     return { post }
+  },
+  head () {
+    const post = this.post
+    const subtitle = post.subtitle ? `: ${post.subtitle}` : ''
+    return {
+      title: `${post.title}${subtitle} | Marvin's Blog`,
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: post.blurb || 'Marvin\'s Blog'
+      }]
+    }
   }
 }
 </script>

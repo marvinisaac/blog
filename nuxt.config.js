@@ -20,8 +20,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'author', content: 'Marvin Isaac' },
+      { name: 'og:image', content: 'https://one.sgp1.cdn.digitaloceanspaces.com/marvinisaac/marvinisaac-1000.jpg'},
+      { hid: 'description', name: 'description', content: 'Marvin\'s Blog' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

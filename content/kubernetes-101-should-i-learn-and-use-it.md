@@ -2,6 +2,7 @@
 title: Kubernetes 101
 subtitle: Should I Learn and Use It?
 publish-date: 2022-05-22
+blurb: To Kubernetes or not to Kubernetes?
 ---
 
 When I started learning about DevOps, one term that keeps on appearing was **Kubernetes**. Reading that it is the de-facto container orchestrator all the way to being "the way forward" I naturally gravitated toward it. It took a while but now I can safely say that I have some cursory knowledge about the topic and can help you answer two questions:

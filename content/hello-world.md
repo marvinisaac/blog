@@ -1,6 +1,7 @@
 ---
 title: Hello World
 publish-date: 2022-05-15
+blurb: It’s already 2022, are blogs even still a thing?
 ---
 It’s already 2022, are blogs even still a thing?
 
