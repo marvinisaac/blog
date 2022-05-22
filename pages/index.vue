@@ -11,17 +11,23 @@
         Marvin's Blog
       </h1>
     </div>
-    <div class="mt-4">
-      <ul>
+    <div class="max-w-xs mt-4 mx-auto">
+      <ul class="p-0">
         <li
           v-for="post in posts"
           :key="post.title"
+          class="list-none my-4 p-0"
         >
-          <a
-            :href="`/${post.slug}`"
-          >
-            {{ post.title }}{{ post.subtitle ? `: ` + post.subtitle : "" }}
-          </a>
+          <p class="flex flex-col m-0">
+            <span class="text-xs">
+              {{ post['publish-date'] | formatDate }}
+            </span>
+            <a
+              :href="`/${post.slug}`"
+            >
+              {{ post.title }}{{ post.subtitle ? `: ` + post.subtitle : "" }}
+            </a>
+          </p>
         </li>
       </ul>
     </div>
@@ -30,6 +36,17 @@
 
 <script>
 export default {
+  filters: {
+    formatDate: (dateString) => {
+      const date = new Date(dateString)
+      const options = {
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit'
+      }
+      return date.toLocaleString('en-US', options)
+    }
+  },
   async asyncData ({ $content }) {
     const posts = await $content()
       .where({
